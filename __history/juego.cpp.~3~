@@ -1,0 +1,171 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "juego.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	StringGrid1->Cells[0][1]="X";
+	StringGrid1->Cells[1][1]="X";
+	StringGrid1->Cells[2][1]="X";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+	StringGrid1->Cells[0][1]="X";
+	StringGrid1->Cells[0][4]="X";
+	StringGrid1->Cells[1][0]="X";
+	StringGrid1->Cells[2][0]="X";
+	StringGrid1->Cells[2][4]="X";
+	StringGrid1->Cells[3][0]="X";
+	StringGrid1->Cells[3][1]="X";
+	StringGrid1->Cells[3][2]="X";
+	StringGrid1->Cells[3][3]="X";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button3Click(TObject *Sender)
+{
+	StringGrid1->Cells[0][0]="X";
+	StringGrid1->Cells[0][1]="X";
+	StringGrid1->Cells[1][0]="X";
+	StringGrid1->Cells[1][2]="X";
+	StringGrid1->Cells[2][1]="X";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button5Click(TObject *Sender)
+{
+	StringGrid1->Cells[0][1]="X";
+	StringGrid1->Cells[0][2]="X";
+	StringGrid1->Cells[0][3]="X";
+	StringGrid1->Cells[1][0]="X";
+	StringGrid1->Cells[1][1]="X";
+	StringGrid1->Cells[1][2]="X";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button4Click(TObject *Sender)
+{
+	StringGrid1->Cells[0][0]="X";
+	StringGrid1->Cells[0][1]="X";
+	StringGrid1->Cells[0][2]="X";
+	StringGrid1->Cells[1][0]="X";
+	StringGrid1->Cells[2][1]="X";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button6Click(TObject *Sender)
+{
+	StringGrid1->Cells[1][1]="X";
+	StringGrid1->Cells[2][1]="X";
+	StringGrid1->Cells[2][2]="X";
+	StringGrid1->Cells[1][2]="X";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::BitBtn1Click(TObject *Sender)
+{
+		for(ix=0; ix<50; ix++)
+		{
+			for(iy=0; iy<50; iy++)
+			{
+				vivos=0;
+
+				if(ix>=50-1)
+					ixd=0;
+				else
+					ixd=ix+1;
+
+				if(iy>=50-1)
+					iyi=0;
+				else
+					iyi=iy+1;
+
+				if(ix<=0)
+					ixe=50-1;
+				else
+					ixe=ix-1;
+
+				if(iy<=0)
+					iys=50-1;
+				else
+					iys=iy-1;
+
+				//comprobación para saber si los vecinos están vivos o muertos
+				if(StringGrid1->Cells[ixd][iy]=="X")    vivos++;
+				if(StringGrid1->Cells[ixe][iy]=="X")    vivos++;
+				if(StringGrid1->Cells[ix][iys]=="X")    vivos++;
+				if(StringGrid1->Cells[ix][iyi]=="X")    vivos++;
+				if(StringGrid1->Cells[ixd][iys]=="X")   vivos++;
+				if(StringGrid1->Cells[ixe][iys]=="X")   vivos++;
+				if(StringGrid1->Cells[ixd][iyi]=="X")   vivos++;
+				if(StringGrid1->Cells[ixe][iyi]=="X")   vivos++;
+
+				//condicional para determinar si la casilla vive o muere
+				if(StringGrid1->Cells[ix][iy]=="X")
+				{
+					// esta vivo
+					if(vivos<=1 || vivos>3)
+					{
+						StringGrid2->Cells[ix][iy]=' ';
+					}
+					else
+					{
+						StringGrid2->Cells[ix][iy]='X';
+					}
+
+				}else
+				{
+					// esta muerto
+					if(vivos==3)
+					{
+						StringGrid2->Cells[ix][iy]='X';
+					}
+					else
+					{
+
+						StringGrid1->Cells[ix][iy]=' ';
+					}
+				}
+
+			}// final del for iy
+
+		} // final del for ix
+
+		for(ix=0; ix<50; ix++)
+		{
+			for(iy=0; iy<50; iy++)
+            {
+				StringGrid1->Cells[ix][iy]=StringGrid2->Cells[ix][iy];
+			}
+		}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button7Click(TObject *Sender)
+{
+	BitBtn1->Enabled=false;
+
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button8Click(TObject *Sender)
+{
+    BitBtn1->Enabled=true;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FormCreate(TObject *Sender)
+{
+        Label1->
+}
+//---------------------------------------------------------------------------
+

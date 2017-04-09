@@ -1,0 +1,352 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 610
+  ClientWidth = 913
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 824
+    Top = 568
+    Width = 3
+    Height = 13
+    Visible = False
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Top = 0
+    Width = 801
+    Height = 569
+    Cursor = crHandPoint
+    Color = clWhite
+    ColCount = 50
+    DefaultColWidth = 20
+    DefaultRowHeight = 20
+    FixedCols = 0
+    RowCount = 50
+    FixedRows = 0
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Elephant'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    ColWidths = (
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20)
+    RowHeights = (
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20)
+  end
+  object Button1: TButton
+    Left = 807
+    Top = 48
+    Width = 86
+    Height = 25
+    Caption = 'Parpadeante'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object StringGrid2: TStringGrid
+    Left = 0
+    Top = 0
+    Width = 801
+    Height = 609
+    Cursor = crHandPoint
+    Color = clWhite
+    ColCount = 50
+    DefaultColWidth = 20
+    DefaultRowHeight = 20
+    FixedCols = 0
+    RowCount = 50
+    FixedRows = 0
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Elephant'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    Visible = False
+    ColWidths = (
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20)
+    RowHeights = (
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20)
+  end
+  object Button2: TButton
+    Left = 807
+    Top = 79
+    Width = 86
+    Height = 25
+    Caption = 'Nave'
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 807
+    Top = 110
+    Width = 86
+    Height = 25
+    Caption = 'Barco'
+    TabOrder = 4
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 807
+    Top = 141
+    Width = 86
+    Height = 25
+    Caption = 'Planeador'
+    TabOrder = 5
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 807
+    Top = 172
+    Width = 86
+    Height = 25
+    Caption = 'Sapo'
+    TabOrder = 6
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 807
+    Top = 203
+    Width = 86
+    Height = 25
+    Caption = 'Bloque'
+    TabOrder = 7
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Left = 807
+    Top = 440
+    Width = 86
+    Height = 49
+    Caption = 'Iniciar'
+    TabOrder = 8
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 807
+    Top = 495
+    Width = 86
+    Height = 50
+    Caption = 'Parar'
+    TabOrder = 9
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 807
+    Top = 282
+    Width = 98
+    Height = 40
+    Caption = 'Siguiente estado'
+    TabOrder = 10
+    OnClick = Button9Click
+  end
+end

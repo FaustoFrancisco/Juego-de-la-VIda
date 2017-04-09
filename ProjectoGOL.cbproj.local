@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/04/06 19:17:43.000.426,=C:\Users\francisco\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2017/04/06 19:17:43.000.452,=C:\Users\francisco\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2017/04/06 20:00:37.000.232,C:\Users\francisco\Documents\Embarcadero\Studio\Projects\juego.dfm=C:\Users\francisco\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2017/04/06 20:00:37.000.232,C:\Users\francisco\Documents\Embarcadero\Studio\Projects\juego.h=C:\Users\francisco\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2017/04/06 20:00:37.000.232,C:\Users\francisco\Documents\Embarcadero\Studio\Projects\juego.cpp=C:\Users\francisco\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2017/04/06 20:00:48.000.399,C:\Users\francisco\Documents\Embarcadero\Studio\Projects\ProjectGOL.h=C:\Users\francisco\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2017/04/06 20:01:38.000.571,C:\Users\francisco\Documents\Embarcadero\Studio\Projects\ProjectoGOL.cbproj=C:\Users\francisco\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
